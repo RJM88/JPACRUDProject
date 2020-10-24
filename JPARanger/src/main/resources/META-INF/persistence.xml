@@ -9,7 +9,7 @@
     </provider>
 
  	 <!-- List Entities Here -->
-	<class>com.skilldistillery.jpacrud.entities.PowerRangerDB</class>
+	<class>com.skilldistillery.jpacrud.entities.PowerRanger</class>
 
 
 

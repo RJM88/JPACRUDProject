@@ -43,6 +43,6 @@ class RangerTest {
 	@Test
 	void test() {
 		assertNotNull(ranger);
-		assertEquals("Mighty Morphin Power Rangers",ranger.getPowerranger());
+		assertEquals("Mighty Morphin Power Rangers",ranger.getSeasonName());
 	}
 }

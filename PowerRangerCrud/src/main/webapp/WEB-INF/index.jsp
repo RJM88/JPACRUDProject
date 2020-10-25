@@ -22,12 +22,14 @@
 		<div
 			style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif; font-weight: 100;">
 		</div>
+
 		</a> <a class="text-danger"><h3>Search for a season</h3></a>
 		<form action="season.do" method="GET">
 			<a class="text-danger">Season number:</a> <input type="text"
 				name="sid" /> <input type="submit" value="Search"
 				class="btn btn-danger" />
 		</form>
+
 		<br>
 		<form action="addSeason.jsp">
 			<button type="submit" class="btn btn-danger">Add new season</button>

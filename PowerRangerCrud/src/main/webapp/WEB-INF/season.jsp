@@ -9,7 +9,7 @@
 	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 	crossorigin="anonymous">
 <meta charset="UTF-8">
-<title>Show Film</title>
+<title>Show Season</title>
 </head>
 <body>
 
@@ -19,16 +19,15 @@
 				<div>
 
 					<a class="text-danger">
-						<h5>Season: ${ranger.id} 
-						<br>
-						Season name: ${ranger.seasonName}</h5>
+						<h5>
+							Season: ${ranger.id} <br> Season name: ${ranger.seasonName}
+						</h5>
 						<p>Episodes: ${ranger.episodes}</p>
 						<p>First episode: ${ranger.firstEpisode}</p>
 						<p>Last episodes: ${ranger.lastEpisode}</p>
-						<p>Original air date: ${ranger.originalAirDate}</p>
-						<p>Final air date : ${ranger.finalAirDate}</p>
+						<p>Original year: ${ranger.originalYear}</p>
+						<p>Main villain : ${ranger.mainVillain}</p>
 				</div>
-				<br>
 				<br>
 				<form action="deleteSeason.do">
 					<button type="submit" class="btn btn-danger" name="sid"
@@ -42,8 +41,8 @@
 					Number of Episodes: <input type="text" name="episodes" /> <br>
 					First Episode: <input type="text" name="firstEpisode" /> <br>
 					Last Episode: <input type="text" name="lastEpisode" /> <br>
-					Original Air Date: <input type="date" name="originalAirDate" /> <br>
-					Final Air Date: <input type="date" name="finalAirDate" /> <br>
+					Original Year: <input type="text" name="originalYear" /> <br>
+					Main Villain: <input type="text" name="mainVillain" /> <br>
 					<button type="submit" class="btn btn-danger" name="sid"
 						value="${ranger.id}">Update</button>
 				</form>

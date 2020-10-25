@@ -1,8 +1,5 @@
 package com.skilldistillery.jpacrud.entities;
 
-import java.time.LocalDateTime;
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,10 +20,10 @@ public class PowerRanger {
 	private String firstEpisode;
 	@Column(name = "last_episode")
 	private String lastEpisode;
-	@Column(name = "original_air_date")
-	private Date originalAirDate;
-	@Column(name = "final_air_date")
-	private Date finalAirDate;
+	@Column(name = "original_year")
+	private Integer originalYear;
+	@Column(name = "main_villain")
+	private String mainVillain;
 
 	public PowerRanger() {
 		super();
@@ -44,8 +41,8 @@ public class PowerRanger {
 		return seasonName;
 	}
 
-	public void setSeasonName(String powerranger) {
-		this.seasonName = powerranger;
+	public void setSeasonName(String seasonName) {
+		this.seasonName = seasonName;
 	}
 
 	public int getEpisodes() {
@@ -72,26 +69,26 @@ public class PowerRanger {
 		this.lastEpisode = lastEpisode;
 	}
 
-	public LocalDateTime getOriginalAirDate() {
-		return originalAirDate;
+	public int getOriginalYear() {
+		return originalYear;
 	}
 
-	public void setOriginalAirDate(LocalDateTime originalAirDate) {
-		this.originalAirDate = originalAirDate;
+	public void setOriginalYear(Integer originalYear) {
+		this.originalYear = originalYear;
 	}
 
-	public LocalDateTime getFinalAirDate() {
-		return finalAirDate;
+	public String getMainVillain() {
+		return mainVillain;
 	}
 
-	public void setFinalAirDate(LocalDateTime finalAirDate) {
-		this.finalAirDate = finalAirDate;
+	public void setMainVillain(String mainVillain) {
+		this.mainVillain = mainVillain;
 	}
 
 	@Override
 	public String toString() {
 		return "PowerRanger [id=" + id + ", seasonName=" + seasonName + ", episodes=" + episodes + ", firstEpisode="
-				+ firstEpisode + ", lastEpisode=" + lastEpisode + ", originalAirDate=" + originalAirDate
-				+ ", finalAirDate=" + finalAirDate + "]";
+				+ firstEpisode + ", lastEpisode=" + lastEpisode + ", originalYear=" + originalYear + ", mainVillain="
+				+ mainVillain + "]";
 	}
 }

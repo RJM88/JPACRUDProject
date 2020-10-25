@@ -24,9 +24,15 @@ public class RangerController {
 
 	@RequestMapping(path = "season.do")
 	public String showSeason(Integer sid, Model model) {
-		PowerRanger ranger = rangerDAO.findById(sid);
-		model.addAttribute("ranger", ranger);
-		return "WEB-INF/season.jsp";
+		PowerRanger ranger;
+		try {
+			ranger = rangerDAO.findById(sid);
+			model.addAttribute("ranger", ranger);
+			return "WEB-INF/season.jsp";
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "WEB-INF/error.jsp";
+		}
 	}
 
 	@RequestMapping(path = "addSeason.do")
@@ -47,7 +53,6 @@ public class RangerController {
 		rangerDAO.updateSeason(sid, updateRanger);
 		return "WEB-INF/index.jsp";
 	}
-	
 
 }
 

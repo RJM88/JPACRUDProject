@@ -38,8 +38,8 @@ public class RangerDAOImpl implements RangerDAO {
 		updateRanger.setEpisodes(ranger.getEpisodes());
 		updateRanger.setFirstEpisode(ranger.getFirstEpisode());
 		updateRanger.setLastEpisode(ranger.getLastEpisode());
-		updateRanger.setOriginalAirDate(ranger.getOriginalAirDate());
-		updateRanger.setFinalAirDate(ranger.getFinalAirDate());
+		updateRanger.setOriginalYear(ranger.getOriginalYear());
+		updateRanger.setMainVillain(ranger.getMainVillain());
 		em.flush();
 		em.close();
 		return updateRanger;

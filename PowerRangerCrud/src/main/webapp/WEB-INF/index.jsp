@@ -13,10 +13,11 @@
 </head>
 <body>
 	<div class="container-fluid">
+	
 		<a class="text-danger"><h1>Find Your Favorite Power Rangers
 				Season!</h1></a>
 
-		<iframe width="50%" height="250" scrolling="no" frameborder="no"
+		<iframe width="100%" height="250" scrolling="no" frameborder="1"
 			allow="autoplay"
 			src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/68763528&color=%2398a4ed&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 		<div
@@ -35,7 +36,7 @@
 			<button type="submit" class="btn btn-danger">Add new season</button>
 		</form>
 		<br>
-		<table class="table table-striped table-hover">
+		<table class="table table-striped table-hover, table-dark">
 			<thead class="thead thead-dark">
 				<tr>
 					<th>Season</th>
@@ -55,12 +56,7 @@
 			</tbody>
 		</table>
 	</div>
-	<style>
-body {
-	background: #292929;
-	padding: 10px 15px 8px;
-}
-</style>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>

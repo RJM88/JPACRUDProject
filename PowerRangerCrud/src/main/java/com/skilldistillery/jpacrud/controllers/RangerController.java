@@ -53,6 +53,11 @@ public class RangerController {
 		rangerDAO.updateSeason(sid, updateRanger);
 		return "WEB-INF/index.jsp";
 	}
+	
+	@RequestMapping(path = "goHome.do")
+	public String gofHome() {
+		return "WEB-INF/index.jsp";
+	}
 
 }
 

@@ -44,5 +44,10 @@ class RangerTest {
 	void test() {
 		assertNotNull(ranger);
 		assertEquals("Mighty Morphin Power Rangers",ranger.getSeasonName());
+		assertEquals(60,ranger.getEpisodes());
+		assertEquals("Day of the Dumpster",ranger.getFirstEpisode());
+		assertEquals("An Oyster Stew",ranger.getLastEpisode());
+		assertEquals(1993,ranger.getOriginalYear());
+		assertEquals("Rita Repulsa",ranger.getMainVillain());
 	}
 }

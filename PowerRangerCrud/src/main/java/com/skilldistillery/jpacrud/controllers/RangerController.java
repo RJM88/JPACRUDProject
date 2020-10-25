@@ -1,5 +1,7 @@
 package com.skilldistillery.jpacrud.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +16,9 @@ public class RangerController {
 	private RangerDAO rangerDAO;
 
 	@RequestMapping(path = "/")
-	public String index() {
+	public String index(Model model) {
+		List<PowerRanger> seasonList = rangerDAO.seasonList();
+		model.addAttribute("seasonList", seasonList);
 		return "WEB-INF/index.jsp";
 	}
 
@@ -24,17 +28,27 @@ public class RangerController {
 		model.addAttribute("ranger", ranger);
 		return "WEB-INF/season.jsp";
 	}
-	
+
 	@RequestMapping(path = "addSeason.do")
 	public String addSeason(PowerRanger newRanger, Model model) {
 		PowerRanger ranger = rangerDAO.addSeason(newRanger);
 		model.addAttribute("ranger", ranger);
 		return "WEB-INF/index.jsp";
 	}
-	
+
 	@RequestMapping(path = "deleteSeason.do")
 	public String deleteSeason(Integer sid, Model model) {
 		rangerDAO.deleteSeason(sid);
 		return "WEB-INF/index.jsp";
 	}
+
+	@RequestMapping(path = "updateSeason.do")
+	public String updateSeason(Integer sid, PowerRanger updateRanger) {
+		rangerDAO.updateSeason(sid, updateRanger);
+		return "WEB-INF/index.jsp";
+	}
+	
+
 }
+
+//actor = dao.update(201, betterActor);

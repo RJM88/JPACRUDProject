@@ -24,9 +24,9 @@ public class PowerRanger {
 	@Column(name = "last_episode")
 	private String lastEpisode;
 	@Column(name = "original_air_date")
-	private LocalDateTime originalAirDate;
+	private Date originalAirDate;
 	@Column(name = "final_air_date")
-	private LocalDateTime finalAirDate;
+	private Date finalAirDate;
 
 	public PowerRanger() {
 		super();

@@ -30,7 +30,8 @@
 		Episode: <input type="text" name="firstEpisode" /> <br> Last
 		Episode: <input type="text" name="lastEpisode" /> <br> Original
 		Air Date: <input type="Date" name="originalAirDate" /> <br>
-		Final Air Date: <input type="Date" name="finalAirDate" /> <br> <input type="submit" class="button" value="ranger" />
+		Final Air Date: <input type="Date" name="finalAirDate" /> <br> 
+		<input type="submit" class="button" value="ranger" />
 	</form>
 </body>
 </html>

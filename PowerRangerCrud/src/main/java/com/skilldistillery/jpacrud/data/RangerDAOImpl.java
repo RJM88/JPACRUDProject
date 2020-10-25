@@ -1,9 +1,12 @@
 package com.skilldistillery.jpacrud.data;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
+import org.apache.jasper.tagplugins.jstl.core.ForEach;
 import org.springframework.stereotype.Service;
 
 import com.skilldistillery.jpacrud.entities.PowerRanger;
@@ -26,21 +29,21 @@ public class RangerDAOImpl implements RangerDAO {
 		em.close();
 		return ranger;
 	}
-	
-//	@Override
-//	public PowerRanger updateSeason(int id, PowerRanger ranger) {
-//		PowerRanger updateRanger = em.find(PowerRanger.class, id);
-//		// assign all the data from the sent in Actor object to the one in the database
-//		updateRanger.setSeasonName(ranger.getSeasonName());
-//		updateRanger.setLastName(actor.getLastName());
-//
-//		em.getTransaction().begin();
-//
-//		em.flush();
-//		em.getTransaction().commit();
-//		em.close();
-//		return dbActor;
-//	}
+
+	@Override
+	public PowerRanger updateSeason(int id, PowerRanger ranger) {
+		PowerRanger updateRanger = em.find(PowerRanger.class, id);
+		// assign all the data from the sent in Actor object to the one in the database
+		updateRanger.setSeasonName(ranger.getSeasonName());
+		updateRanger.setEpisodes(ranger.getEpisodes());
+		updateRanger.setFirstEpisode(ranger.getFirstEpisode());
+		updateRanger.setLastEpisode(ranger.getLastEpisode());
+		updateRanger.setOriginalAirDate(ranger.getOriginalAirDate());
+		updateRanger.setFinalAirDate(ranger.getFinalAirDate());
+		em.flush();
+		em.close();
+		return updateRanger;
+	}
 
 	@Override
 	public boolean deleteSeason(int id) {
@@ -50,5 +53,15 @@ public class RangerDAOImpl implements RangerDAO {
 		em.flush();
 		em.close();
 		return seasonDeleted;
+	}
+
+	@Override
+	public List<PowerRanger> seasonList() {
+		String sql = "Select s from PowerRanger s";
+		List<PowerRanger> list = em.createQuery(sql, PowerRanger.class).getResultList();
+		for (PowerRanger season : list) {
+			System.out.println(season.getSeasonName());
+		}
+		return list;
 	}
 }

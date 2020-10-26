@@ -55,7 +55,9 @@ public class RangerController {
 	}
 	
 	@RequestMapping(path = "goHome.do")
-	public String goHome() {
+	public String goHome(Model model) {
+		List<PowerRanger> seasonList = rangerDAO.seasonList();
+		model.addAttribute("seasonList", seasonList);
 		return "WEB-INF/index.jsp";
 	}
 	@RequestMapping(path = "addSeasonInput.do")

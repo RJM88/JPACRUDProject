@@ -15,6 +15,7 @@
 <body>
 
 	<div class="container-fluid">
+	<br>
 		</form>
 		<form action="goHome.do">
 			<button type="submit" class="btn btn-danger">Home</button>
@@ -29,11 +30,24 @@
 				type="text" name="firstEpisode" /> <br> Last Episode: <input
 				type="text" name="lastEpisode" /> <br> Original Air Date: <input
 				type="text" name="originalYear" /> <br> Final Air Date: <input
-				type="text" name="mainVillain" /> <br> <input type="submit"
+				type="text" name="mainVillain" /> <br> <br><input type="submit"
 				class="btn btn-danger" class="button" value="Add" />
 			</a>
 		</form>
+		</div>
+	<style>
+h1 {
+	text-align: center;
+}
 
+p {
+	text-align: center;
+}
+
+div {
+	text-align: center;
+}
+</style>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 			crossorigin="anonymous"></script>

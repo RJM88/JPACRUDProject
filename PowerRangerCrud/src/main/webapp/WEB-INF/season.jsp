@@ -57,7 +57,9 @@
 				<a class="text-danger">This Season Does Not exist.</a>
 			</c:otherwise>
 		</c:choose>
-		</a>
+		<br>
+		<iframe width="73%" height="200" 
+			src="https://c4.wallpaperflare.com/wallpaper/581/285/148/8k-power-rangers-4k-wallpaper-preview.jpg"></iframe>
 	</div>
 	<style>
 h1 {
@@ -70,6 +72,10 @@ p {
 
 div {
 	text-align: center;
+}
+iframe{
+"display: block; margin-left: auto; margin-right: auto; width: 60%;">
+
 }
 </style>
 	}

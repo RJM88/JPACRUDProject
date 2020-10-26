@@ -55,8 +55,12 @@ public class RangerController {
 	}
 	
 	@RequestMapping(path = "goHome.do")
-	public String gofHome() {
+	public String goHome() {
 		return "WEB-INF/index.jsp";
+	}
+	@RequestMapping(path = "addSeasonInput.do")
+	public String addSeasonInput() {
+		return "WEB-INF/addSeason.jsp";
 	}
 
 }

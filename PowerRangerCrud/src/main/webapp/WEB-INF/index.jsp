@@ -32,7 +32,7 @@
 		</form>
 
 		<br>
-		<form action="addSeason.jsp">
+		<form action="addSeasonInput.do">
 			<button type="submit" class="btn btn-danger">Add new season</button>
 		</form>
 		<br>

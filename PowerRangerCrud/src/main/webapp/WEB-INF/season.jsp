@@ -53,7 +53,7 @@
 						value="${ranger.id}">Update</button>
 				</form>
 			</c:when>
-			<c:otherwise>This Season Does Not exist.</c:otherwise>
+			<c:otherwise><a class="text-danger">This Season Does Not exist.</a></c:otherwise>
 		</c:choose>
 		</a>
 	</div>

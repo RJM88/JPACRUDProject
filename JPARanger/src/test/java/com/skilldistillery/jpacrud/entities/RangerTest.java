@@ -49,5 +49,5 @@ class RangerTest {
 		assertEquals("An Oyster Stew",ranger.getLastEpisode());
 		assertEquals(1993,ranger.getOriginalYear());
 		assertEquals("Rita Repulsa",ranger.getMainVillain());
-	}
+	}	
 }

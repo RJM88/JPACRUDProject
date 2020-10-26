@@ -33,7 +33,6 @@ public class RangerDAOImpl implements RangerDAO {
 	@Override
 	public PowerRanger updateSeason(int id, PowerRanger ranger) {
 		PowerRanger updateRanger = em.find(PowerRanger.class, id);
-		// assign all the data from the sent in Actor object to the one in the database
 		updateRanger.setSeasonName(ranger.getSeasonName());
 		updateRanger.setEpisodes(ranger.getEpisodes());
 		updateRanger.setFirstEpisode(ranger.getFirstEpisode());

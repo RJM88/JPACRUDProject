@@ -66,5 +66,3 @@ public class RangerController {
 	}
 
 }
-
-//actor = dao.update(201, betterActor);

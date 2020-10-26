@@ -28,8 +28,8 @@
 				name="seasonName" /> <br> Number of Episodes: <input
 				type="text" name="episodes" /> <br> First Episode: <input
 				type="text" name="firstEpisode" /> <br> Last Episode: <input
-				type="text" name="lastEpisode" /> <br> Original Air Date: <input
-				type="text" name="originalYear" /> <br> Final Air Date: <input
+				type="text" name="lastEpisode" /> <br> Original Year: <input
+				type="text" name="originalYear" /> <br> Main Villain: <input
 				type="text" name="mainVillain" /> <br> <br><input type="submit"
 				class="btn btn-danger" class="button" value="Add" />
 			</a>

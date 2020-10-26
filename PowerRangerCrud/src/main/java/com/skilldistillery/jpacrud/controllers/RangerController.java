@@ -53,13 +53,14 @@ public class RangerController {
 		rangerDAO.updateSeason(sid, updateRanger);
 		return "WEB-INF/index.jsp";
 	}
-	
+
 	@RequestMapping(path = "goHome.do")
 	public String goHome(Model model) {
 		List<PowerRanger> seasonList = rangerDAO.seasonList();
 		model.addAttribute("seasonList", seasonList);
 		return "WEB-INF/index.jsp";
 	}
+
 	@RequestMapping(path = "addSeasonInput.do")
 	public String addSeasonInput() {
 		return "WEB-INF/addSeason.jsp";

@@ -19,7 +19,7 @@
 
 		<iframe width="100%" height="250" scrolling="no" frameborder="1"
 			allow="autoplay"
-			src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/68763528&color=%2398a4ed&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+			src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/68763528&color=%2398a4ed&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 		<div
 			style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif; font-weight: 100;">
 		</div>

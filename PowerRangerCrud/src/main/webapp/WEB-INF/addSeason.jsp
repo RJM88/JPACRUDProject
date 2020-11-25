@@ -1,7 +1,7 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix=""%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +15,7 @@
 <body>
 
 	<div class="container-fluid">
-	<br>
+		<br>
 		</form>
 		<form action="goHome.do">
 			<button type="submit" class="btn btn-danger">Home</button>
@@ -30,14 +30,15 @@
 				type="text" name="firstEpisode" /> <br> Last Episode: <input
 				type="text" name="lastEpisode" /> <br> Original Year: <input
 				type="text" name="originalYear" /> <br> Main Villain: <input
-				type="text" name="mainVillain" /> <br> <br><input type="submit"
-				class="btn btn-danger" class="button" value="Add" />
+				type="text" name="mainVillain" /> <br> <br>
+			<input type="submit" class="btn btn-danger" class="button"
+				value="Add" />
 			</a>
 		</form>
 		<br>
-		<iframe width="73%" height="200" 
+		<iframe width="73%" height="200"
 			src="https://c4.wallpaperflare.com/wallpaper/581/285/148/8k-power-rangers-4k-wallpaper-preview.jpg"></iframe>
-		</div>
+	</div>
 	<style>
 h1 {
 	text-align: center;
@@ -50,21 +51,25 @@ p {
 div {
 	text-align: center;
 }
-iframe{
-"display: block; margin-left: auto; margin-right: auto; width: 60%;">
 
+iframe { "
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	">
 }
 </style>
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-			crossorigin="anonymous"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-			integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-			crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+		integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+		crossorigin="anonymous"></script>
 </body>
 </html>

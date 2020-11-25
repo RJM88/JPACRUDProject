@@ -39,18 +39,24 @@ public class RangerController {
 	public String addSeason(PowerRanger newRanger, Model model) {
 		PowerRanger ranger = rangerDAO.addSeason(newRanger);
 		model.addAttribute("ranger", ranger);
+		List<PowerRanger> seasonList = rangerDAO.seasonList();
+		model.addAttribute("seasonList", seasonList);
 		return "WEB-INF/index.jsp";
 	}
 
 	@RequestMapping(path = "deleteSeason.do")
 	public String deleteSeason(Integer sid, Model model) {
 		rangerDAO.deleteSeason(sid);
+		List<PowerRanger> seasonList = rangerDAO.seasonList();
+		model.addAttribute("seasonList", seasonList);
 		return "WEB-INF/index.jsp";
 	}
 
 	@RequestMapping(path = "updateSeason.do")
-	public String updateSeason(Integer sid, PowerRanger updateRanger) {
+	public String updateSeason(Integer sid, PowerRanger updateRanger, Model model) {
 		rangerDAO.updateSeason(sid, updateRanger);
+		List<PowerRanger> seasonList = rangerDAO.seasonList();
+		model.addAttribute("seasonList", seasonList);
 		return "WEB-INF/index.jsp";
 	}
 

@@ -39,8 +39,10 @@ div {
 	text-align: center;
 }
 iframe{
-"display: block; margin-left: auto; margin-right: auto; width: 60%;">
-
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 56%;
 }
 </style>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

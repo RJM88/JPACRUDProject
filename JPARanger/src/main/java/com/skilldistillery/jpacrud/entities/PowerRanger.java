@@ -69,7 +69,7 @@ public class PowerRanger {
 		this.lastEpisode = lastEpisode;
 	}
 
-	public int getOriginalYear() {
+	public Integer getOriginalYear() {
 		return originalYear;
 	}
 

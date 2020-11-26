@@ -16,6 +16,7 @@
 
 	<div class="container-fluid">
 		<br>
+
 		</form>
 		<form action="goHome.do">
 			<button type="submit" class="btn btn-danger">Home</button>
@@ -30,9 +31,8 @@
 				type="text" name="firstEpisode" /> <br> Last Episode: <input
 				type="text" name="lastEpisode" /> <br> Original Year: <input
 				type="text" name="originalYear" /> <br> Main Villain: <input
-				type="text" name="mainVillain" /> <br> <br>
-			<input type="submit" class="btn btn-danger" class="button"
-				value="Add" />
+				type="text" name="mainVillain" /> <br> <br> <input
+				type="submit" class="btn btn-danger" class="button" value="Add" />
 			</a>
 		</form>
 		<br>
@@ -56,7 +56,7 @@ iframe { "
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 56%;
 	">
 }
 </style>

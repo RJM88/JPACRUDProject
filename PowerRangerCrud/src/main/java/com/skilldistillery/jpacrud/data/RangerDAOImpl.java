@@ -24,9 +24,14 @@ public class RangerDAOImpl implements RangerDAO {
 
 	@Override
 	public PowerRanger addSeason(PowerRanger ranger) {
-		em.persist(ranger);
-		em.flush();
-		em.close();
+		try {
+			em.persist(ranger);
+			em.flush();
+			em.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return ranger;
 	}
 

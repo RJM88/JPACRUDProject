@@ -78,7 +78,7 @@ iframe { "
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 56%;
 	">
 }
 </style>
